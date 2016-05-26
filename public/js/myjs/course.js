@@ -1,7 +1,7 @@
  var app = angular.module('myApp', ['ngResource'], function($interpolateProvider) {
     $interpolateProvider.startSymbol('<%');
     $interpolateProvider.endSymbol('%>');
- }).constant('API', 'http://laravel.dev/');
+ }).constant('API', 'http://localhost:3000/');
 
 app.controller('CoursesController', [ '$http', '$scope', function($http, $scope, API){
   $scope.courses = [];
@@ -13,7 +13,7 @@ app.controller('CoursesController', [ '$http', '$scope', function($http, $scope,
       if (pageNumber === undefined) {
           pageNumber = '1';
       }
-      $http.get('http://laravel.dev/getlist' + '?page=' + pageNumber).success(function(response) {
+      $http.get('http://localhost:3000/getlist' + '?page=' + pageNumber).success(function(response) {
           $scope.courses        = response.data;
           $scope.totalPages   = response.last_page;
           $scope.currentPage  = response.current_page;
@@ -53,7 +53,8 @@ app.directive('fastNg', function(){
     return {
         restrict: 'E',
         scope: { framework : ' = '},
-        link: function(scope, el, attrs){
+        link: function(scope, el, attrs) {
+            console.log(el);
             scope.$watch('framework', function (newValue, oldValue){
                 React.renderComponent(MYAPP({framework: newValue}), el[0]);
             })

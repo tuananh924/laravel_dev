@@ -17,3 +17,5 @@ Route::get('/', function () {
 Route::get('courses', 'CourseController@index');
 Route::get('getlist', 'CourseController@getList');
 Route::get('combining', 'CourseController@combiningAngularAndReact');
+Route::get('coursesreact', 'CourseController@coursesReact');
+Route::get('add', 'CourseController@add');

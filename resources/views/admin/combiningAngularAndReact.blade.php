@@ -6,7 +6,7 @@
         <section class="panel">
             <header class="panel-heading">
                 Combining AngularJs and ReactJs
-                <input type="text" class="form-control" ng-model='framwork'>
+                <input type="text" class="form-control" ng-model='framework'>
                 <hr/>
                 <fast-ng framework='framework'></fast-ng>
                 <hr/>

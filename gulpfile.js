@@ -14,6 +14,8 @@ var browserSync = require('browser-sync').create();
  */
 
 elixir(function(mix) {
-    mix.less('style.less').less('admin-panel.less');
-
+    //mix.less('style.less').less('admin-panel.less');
+    mix.browserSync({
+        proxy: 'laravel.dev'
+    });
 });

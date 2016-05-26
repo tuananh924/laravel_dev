@@ -1,0 +1,1 @@
+{"version":3,"sources":["admin-panel.less","admin-panel.css"],"names":[],"mappings":"AAAA;EACI,YAAA;CCCH","file":"admin-panel.css","sourcesContent":[".td-50 {\n    width: 26px;\n}\n",".td-50 {\n  width: 26px;\n}\n"],"sourceRoot":"/source/"}
