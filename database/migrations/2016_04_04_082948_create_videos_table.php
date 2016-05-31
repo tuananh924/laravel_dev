@@ -12,17 +12,26 @@ class CreateVideosTable extends Migration
      */
     public function up()
     {
-        Schema::create('videos', function (Blueprint $table) {
+        Schema::create('tbl_videos', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('course_id')->index();
-            $table->string('youtube_id')->index();
-            $table->string('title');
-            $table->string('description');
-            $table->string('thumbnail');
+            //$table->integer('course_id')->index();
+           // $table->string('youtube_id')->index();
+            $table->string('video_title', 255);
+            $table->string('videos_slug', 255);
+            $table->string('meta_desc', 255);
+            $table->string('meta_key', 255);
+            $table->integer('youtube_id');
+            $table->integer('course_id');
             $table->text('embed');
-            $table->string('views');
-            $table->string('likes');
-            $table->string('shares');
+            $table->string('thumbnail', 255);
+            $table->integer('video_likes');
+            $table->integer('video_views');
+            $table->integer('video_shares');
+            $table->string('thumbnail_width', 100);
+            $table->string('thumbnail_height', 100);
+            // $table->string('views');
+            // $table->string('likes');
+            // $table->string('shares');
             $table->timestamps();
         });
     }
