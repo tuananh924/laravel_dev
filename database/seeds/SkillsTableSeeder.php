@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class CoursesSeeder extends Seeder
+class SkillsTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,10 +12,12 @@ class CoursesSeeder extends Seeder
     public function run()
     {
         $faker = Faker\Factory::create();
-        for($i = 0; $i <= 10; $i++) {
-            DB::table('courses')->insert([
-                'title_course' => $faker->company,
-                'alias_course' => $faker->name,
+
+        $limit = 50;
+
+        for ($i = 0; $i < $limit; $i++) {
+            DB::table('tbl_skills')->insert([
+                'skill_name' => $faker->name,
             ]);
         }
     }

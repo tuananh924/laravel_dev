@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class UsersTableSeeder extends Seeder
+class AdminsTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -16,15 +16,11 @@ class UsersTableSeeder extends Seeder
         $limit = 50;
 
         for ($i = 0; $i < $limit; $i++) {
-            DB::table('tbl_users')->insert([
+            DB::table('tbl_admins')->insert([
                 'username' => $faker->name,
                 'password' => bcrypt('secret'),
                 'email' => $faker->unique()->email,
-                'address' => $faker->address,
-                'phone' => $faker->phoneNumber,
                 'active' => $faker->randomDigit,
-                'school_id' => $faker->randomDigit,
-                'skill_id' => $faker->randomDigit
             ]);
         }
     }
