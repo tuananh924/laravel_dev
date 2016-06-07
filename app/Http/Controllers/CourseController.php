@@ -11,6 +11,7 @@ class CourseController extends Controller
 {
     public function index()
     {
+        echo "ssss";die;
         return view('admin.course');
     }
     public function getList()
