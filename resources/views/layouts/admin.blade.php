@@ -424,7 +424,7 @@
     <script src="js/bootstrap-wysiwyg.js"></script>
     <script src="js/bootstrap-wysiwyg-custom.js"></script>
     <!-- ck editor -->
-    <script type="text/javascript" src="assets/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="js/ckeditor/ckeditor.js"></script>
     <!-- custom form component script for this page-->
     <script src="js/form-component.js"></script>
     <!-- custome script for all page -->
@@ -433,8 +433,13 @@
     <script type="text/javascript" src="https://code.angularjs.org/1.3.11/angular-route.js"></script>
     <script src="bower_components/angularUtils-pagination/dirPagination.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular-resource.min.js"></script>
+
     <script src="bower_components/react/react.js"></script>
+    <script src="bower_components/react/react-dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0-alpha1/JSXTransformer.js"></script>
+    <!-- <script src="http://fb.me/recdact-0.10.0.js"></script> -->
     <script src="js/myjs/components/myapp.js"></script>
     <script src="js/myjs/course.js"></script>
+    <script type="text/jsx" src="js/myjs/components/form.jsx"></script>
   </body>
 </html>

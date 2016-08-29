@@ -7,7 +7,7 @@
           <div class="row">
               <div class="col-md-12">
                   <header class="panel-heading">
-                     List course
+                     List course 1  1
                   </header>
                   <table class="table table-bordered table-hover">
                       <thead>
